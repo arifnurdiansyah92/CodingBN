@@ -6,6 +6,9 @@ from scipy import stats
 url = 'https://raw.githubusercontent.com/mwaskom/seaborn-data/master/iris.csv'
 data = pd.read_csv(url)
 
+# Print The First 5 Rows
+print(data.head())
+
 # 2. Kitchen Prep: Remove Duplicates
 data = data.drop_duplicates()
 

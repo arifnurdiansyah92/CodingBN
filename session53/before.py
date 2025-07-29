@@ -9,7 +9,7 @@ try:
     print("--- Raw Data Preview (First 5 Rows) ---")
     print(df_raw.head())
 except FileNotFoundError:
-    print("Error: 'sales_data_large_errors.csv' not found.")
+    print("Error: 'sales.csv' not found.")
     print("Please make sure the CSV file is in the same folder as your script.")
     exit()
 
