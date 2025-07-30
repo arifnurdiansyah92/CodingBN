@@ -8,6 +8,8 @@ data = {
 }
 df = pd.DataFrame(data)
 
+print(df)
+
 # A pivot table is the perfect tool for this question
 # It reshapes the data to show Stores as rows and Products as columns
 sales_pivot = df.pivot_table(index='Store', columns='Product', values='Sales', aggfunc='sum')
